@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Max example</title>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+   }
+    video {
+      max-width: 60%;
+      height: 80%;
+      border: 2px solid #000;
+    }
+
+    .top-right-button {
+      position: absolute;
+      top: 150px;
+      right: 30px;
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden audio element -->
+  <audio id="Playoff-audio" src="Playofffs.mp3"></audio>
+
+  <!-- Is this a secret message? oooo
+  -->
+
+  <!-- Clickable image button -->
+  <img 
+    src="Ball.jpg" 
+    alt="Play Sound" 
+    class="top-right-button" 
+    onclick="document.getElementById('Playoff-audio').play()" 
+  >
+
+  <!-- Main image in center -->
+  <video src="Maxg.mp4" controls poster="Guitar.jpg"></video>
+
+</body>
+</html>
+
